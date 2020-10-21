@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="@dimen/global_cardview_corner_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/global_horizontal_distance"
+        android:layout_marginBottom="@dimen/global_horizontal_distance"
+        android:padding="@dimen/global_padding">
+
+        <TextView
+            android:id="@+id/new_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_size"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/global_vertical_distance"
+            />
+
+        <TextView
+            android:id="@+id/new_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_title"
+            android:layout_marginTop="@dimen/global_vertical_distance"
+            />
+
+        <ImageView
+            android:id="@+id/new_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/new_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/global_vertical_distance"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
